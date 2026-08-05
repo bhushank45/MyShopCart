@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     gap: 30px;
-    background:#2E1065;
+    background:#a020f0;
     padding: 20px;
     font-size: 20px;
 }
@@ -17,4 +17,34 @@
 .navlink:hover{
     color:#A78BFA;
     transform: translateY(-3px);
+}
+.product-container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    padding: 20px;
+    text-align: center;
+}
+.p-card{
+    box-shadow: 0 10px 40px rgba(127, 0, 196, 0.18);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 18px;
+}
+.p-card img {
+    width: 150px;
+    height: 150px;
+    /* object-fit: contain; */
+}
+.p-card button{
+    margin-top: auto;
+    border: none;
+    padding: 10px 20px;
+    background: #ae4eea;
+    color: #fff;
+    border-radius: 10px;
 }
