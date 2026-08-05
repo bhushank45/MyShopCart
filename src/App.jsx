@@ -7,12 +7,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { Navbar } from './Components/Navbar'
 import { footer } from './components/footer'
 import { Outlet } from 'react-router-dom'
+import MyProductList from './Components/MyProductList'
 
 function App() {
   return (
     <>
       {/* <h1>Hello World!</h1> */}
       <Navbar/>
+      <MyProductList name="Laptop" price="₹ 49,000"></MyProductList>
       <Outlet/>
     </>
   )

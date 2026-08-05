@@ -1,0 +1,20 @@
+.navcss{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    background:#2E1065;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.navlink{
+    text-decoration:none ;
+    color: #F5F3FF;
+    font-weight: 500;
+    display: inline-block;
+    transition: 0.3s ease;
+}
+.navlink:hover{
+    color:#A78BFA;
+    transform: translateY(-3px);
+}

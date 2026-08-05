@@ -3,13 +3,11 @@ import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   return (
-    <div>
-      <Link to="/" style={{ marginRight: "20px" }}>
-        Home
-      </Link>
-      <Link to="/products" style={{ marginRight: "20px" }}>
-        Products
-      </Link>
-    </div>
+    <nav className="navcss">
+      <Link to="/" className="navlink">Home</Link>
+      <Link to="/products" className="navlink">Products</Link>
+      <Link to="/cart" className="navlink">Cart</Link>
+      <Link to="/login" className="navlink">Login</Link>
+    </nav>
   );
 };
