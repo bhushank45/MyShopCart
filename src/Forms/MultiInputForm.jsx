@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import "../index.css";
 export const MultiInputForm = () => {
   var [user, setUser] = useState({
     uname: "",
@@ -22,43 +23,52 @@ export const MultiInputForm = () => {
   };
 
   return (
-    <div>
-      <h4>Resigration by using MultiInputForm</h4>
+    <div className="auth-container">
+      <div className="auth-box">
+        <h2>Resigration by using MultiInputForm</h2>
 
-      <form onSubmit={handleSubmit}>
-        <label>User Name</label>
-        <input
-          type="text"
-          name="uname"
-          placeholder="Enter name"
-          onChange={setData}
-          value={user.uname}
-        />
-        <br />
+        <form onSubmit={handleSubmit} className="auth">
+          <div>
+            <label>User Name</label>
+            <input
+              type="text"
+              name="uname"
+              onChange={setData}
+              value={user.uname}
+            />
+          </div>
 
-        <label>User Email</label>
-        <input
-          type="email"
-          name="uemail"
-          onChange={setData}
-          value={user.uemail}
-        />
-        <br />
+          <div>
+            <label>User Email</label>
+            <input
+              type="email"
+              name="uemail"
+              onChange={setData}
+              value={user.uemail}
+            />
+          </div>
 
-        <label>User Password</label>
-        <input
-          type="password"
-          name="upass"
-          onChange={setData}
-          value={user.upass}
-        />
-        <br />
+          <div>
+            <label>User Password</label>
+            <input
+              type="password"
+              name="upass"
+              onChange={setData}
+              value={user.upass}
+            />
+          </div>
 
-        <label>User Age</label>
-        <input type="number" name="uage" onChange={setData} value={user.uage} />
-        <br />
-        <button>Submit</button>
-      </form>
+          <label>User Age</label>
+          <input
+            type="number"
+            name="uage"
+            onChange={setData}
+            value={user.uage}
+          /><br/>
+        
+          <button>Submit</button>
+        </form>
+      </div>
     </div>
   );
 };
