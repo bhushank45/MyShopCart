@@ -99,3 +99,7 @@
 .auth-box h2{
     margin-bottom: 30px;
 }
+.auth div p{
+    color: red;
+    font-size: 14px;
+}
