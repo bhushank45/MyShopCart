@@ -43,9 +43,12 @@
     margin-top: auto;
     border: none;
     padding: 10px 20px;
-    background: #ae4eea;
+    background: #9500f2;
     color: #fff;
     border-radius: 10px;
+}
+.p-card button:hover{
+    background-color: #a020f0;
 }
 .auth-container{
     height: 100vh;
