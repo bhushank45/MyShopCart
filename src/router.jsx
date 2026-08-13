@@ -7,6 +7,8 @@ import { Login } from "./Pages/Login";
 import { Register } from "./Pages/Register";
 import { ControlInputForm } from "./Forms/ControlInputForm";
 import { MultiInputForm } from "./Forms/MultiInputForm";
+import Payment from "./Pages/Payment";
+import OrderSuccess from "./Pages/OrderSuccess";
 
 const router=createBrowserRouter([
     {
@@ -17,7 +19,10 @@ const router=createBrowserRouter([
             {path:"products",element:<Products/>},
             {path:"cart",element:<Cart/>},
             {path:"login",element:<Login/>},
-            {path:"register",element:<MultiInputForm/>}
+            {path:"register",element:<MultiInputForm/>},
+            {path:"Payment",element:<Payment/>},
+            {path:"Success",element:<OrderSuccess/>}
+
         ]
     }
 ]);

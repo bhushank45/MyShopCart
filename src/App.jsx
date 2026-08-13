@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "./assets/vite.svg";
 import heroImg from "./assets/hero.png";
@@ -9,17 +9,23 @@ import { footer } from "./components/footer";
 import { Outlet } from "react-router-dom";
 import MyProductList from "./Components/MyProductList";
 import { UseEffectDemo } from "./UseEffect/UseEffectDemo";
+import { ThemeContext } from "./context/ThemeContext";
 
 function App() {
-  return (
-    <>
-      {/* <h1>Hello World!</h1> */}
-      <Navbar />
-      {/* <MyProductList name="Laptop" price="₹ 49,000"></MyProductList> */}
-      {/* <UseEffectDemo></UseEffectDemo> */}
+  const { state } = useContext(ThemeContext);
 
+  return (
+    <div
+      className={state.theme}
+      style={{
+        minHeight: "100vh",
+        backgroundColor: state.theme === "dark" ? "#121212" : "#ffffff",
+        color: state.theme === "dark" ? "#ffffff" : "#111827",
+      }}
+    >
+      <Navbar />
       <Outlet />
-    </>
+    </div>
   );
 }
 

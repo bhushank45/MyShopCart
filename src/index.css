@@ -1,6 +1,5 @@
 .navcss{
     display: flex;
-    justify-content: center;
     gap: 30px;
     background:#a020f0;
     padding: 20px;
@@ -102,4 +101,12 @@
 .auth div p{
     color: red;
     font-size: 14px;
+}
+.theme-btn{
+    
+    border:2px solid #fff;
+    background:none;
+    margin-left: 10px;
+    padding: 10px;
+    border-radius: 50%;
 }
