@@ -5,7 +5,7 @@ import heroImg from "./assets/hero.png";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Navbar } from "./Components/Navbar";
-import { footer } from "./components/footer";
+import { footer } from "./Components/Footer";
 import { Outlet } from "react-router-dom";
 import MyProductList from "./Components/MyProductList";
 import { UseEffectDemo } from "./UseEffect/UseEffectDemo";
