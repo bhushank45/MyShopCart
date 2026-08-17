@@ -10,6 +10,9 @@ import { Outlet } from "react-router-dom";
 import MyProductList from "./Components/MyProductList";
 import { UseEffectDemo } from "./UseEffect/UseEffectDemo";
 import { ThemeContext } from "./context/ThemeContext";
+import ProductInfo from "./Pages/ProductInfo";
+import ErrorBoundary from "./Pages/ErrorBoundary";
+import Counter from "./Memorization/Counter";
 
 function App() {
   const { state } = useContext(ThemeContext);
@@ -25,6 +28,9 @@ function App() {
     >
       <Navbar />
       <Outlet />
+      <Counter></Counter>
+      {/* <ErrorBoundary><ProductInfo/></ErrorBoundary> */}
+      
     </div>
   );
 }
